@@ -5,4 +5,4 @@ def uppercase(str):
         if (char in range(ord('a'), ord('z') + 1)):
             char = char - 32
         print("{:c}".format(char), end='')
-    print();
+    print()
