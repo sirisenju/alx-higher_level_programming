@@ -15,8 +15,9 @@ def roman_to_int(roman_string):
         if data.get(roman_string[i], 0) == 0:
             return (0)
 
-        if (i != (len(roman_string) - 1) and data[roman_string[i]] < data[roman_string[i + 1]]):
-            sum += data[roman_string[i]] * - 1
+        if (i != (len(roman_string) - 1) and 
+                data[roman_string[i]] < data[roman_string[i + 1]]):
+            sum += data[roman_string[i]] * -1
 
         else:
             sum += data[roman_string[i]]
