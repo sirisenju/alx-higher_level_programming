@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+
 """Define classes for a singly-linked list."""
 
 
-class Hode:
+class Node:
     """Represent a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
