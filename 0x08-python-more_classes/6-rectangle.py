@@ -9,6 +9,8 @@ class Rectangle:
             width (int): width of the rectangle
             height (int): height of the rectangle
     """
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
             Initializes the instance of the class(The constructor)
@@ -29,6 +31,7 @@ class Rectangle:
             self.__height = height
         else:
             raise TypeError("height must be an integer")
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
